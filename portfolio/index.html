@@ -6,192 +6,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/helper.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <div class="container" >
-        <div class="block-1 block"></div>
-        <div class="block-2 block"></div>
-    </div>
-    <header id="header" class="header">
-        <div id="logo" class="logo">
-            <img class="logo__image" src="image/logo.png" alt="Nguyễn Mạnh Đô">
+    <header id="header" class="section section-header">
+        <div class="container">
+        <div class="row">
+            <div class="column column--half">
+                <img class="logo__image" src="image/logo.png" alt="Nguyễn Mạnh Đô">
+            </div>
+            <div class="column column--half">
+                <nav id="main-nav" class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Skills</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Contact</a>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav id="main-nav" class="main-nav">
-            <ul class="nav-list">
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">About</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Skills</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Projects</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Contact</a>
-                </li> 
-            </ul>
-        </nav>
+        </div>
     </header>
     <main>
-        <section class="banner">
-            <div class="banner__content">
-                <span class="sub-heading">Hello, I'm</span>
-                <h2 class="heading banner-heading name">Nguyễn Mạnh Đô</h1>
-                <h3 class="heading-3">Web Developer</h3> 
-                <a class="button button--outline" href="#">Contact Me</a>
-            </div>
-            <div class="banner__image">
-                <img class="banner--image" src="image/banner-image.jpeg" alt="">
-            </div>
-        </section>
-        <section class="about-me">
-            <div class="section__header">
-                <h2 class="section__heading">About Me</h2>
-            </div>
-            <div class="section__content">
-                <div class="section__content--left">
-                    <div class="about-me-image__wrapper">
-                        <img class="about-me-image" src="image/banner-image.jpeg" alt="">
+        <section class="section banner">
+            <div class="container">
+                <div class="row">
+                    <div class="column column--half">
+                        <div class="banner__content">
+                            <span class="sub-heading">Hello, I'm</span>
+                            <h2 class="heading heading--large font-bold">Nguyễn Mạnh Đô</h2>
+                            <h3 class="heading heading--medium">Web Developer</h3>
+                            <a href="#" class="button button-outline">Contact Me</a>
+                        </div>
                     </div>
-                    
-                </div>
-                <div class="section__content--right">
-                    <h3 class="section-title">Who I AM?</h3>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro molestiae in optio, repellat facilis quis fugit eum tempora quasi modi expedita eaque aliquam blanditiis, commodi alias consequatur! Corporis, numquam.</p>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quasi! Minus autem praesentium placeat et. Laudantium voluptatem cumque eveniet, aspernatur ab maxime, quibusdam, rem laborum quae perferendis quo expedita magnam.</p>
-                    <a href="#" class="button button--solid">Download Resume</a>
+                    <div class="column column--half">
+                        <div class="banner__image">
+                            <img class="banner--image" src="image/banner-image.jpeg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="my-skill">
-            <div class="section-heading">
-                <h2 class="heading">
-                    My Skills
-                </h2>
-            </div>
-            <div class="section-content-wrapper">
-                <div class="section-content-left">
-                    <h3>My creative <span>Skills</span> and <span>experiences.</span> </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid porro natus facere atque aliquam, facilis illum esse rerum rem earum ipsa dicta reiciendis sit, fugit ullam deleniti dolore beatae aspernatur?</p>
+        <section class="section section-about-me">
+            <div class="container">
+                <div class="row section-heading">
+                    <div class="column">
+                        <h2 class="heading heading--medium heading--underline">About Me</h2>
+                    </div>
                 </div>
-                <div class="section-content-right">
-                    <ul class="progress">
-                        <li class="progress-item">
-                           <span class="progress-label">
-                            <span class="progress-title">
-                                HTML 1
-                            </span>
-                            <span class="progress-percent">
-                                90%
-                            </span>
-                           </span> 
-                           <div class="progress-bar progress-bar-90"></div>
-                        </li>
-                        <li class="progress-item">
-                            <span class="progress-label">
+                <div class="section__content">
+                <div class="row">
+                    <div class="column column--half">
+                        <div class="about-me-image-wrap">
+                            <img class="about-me-image" src="image/banner-image.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="column column--half section-content">
+                        <h3 class="heading--small">Who I AM?</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro molestiae in optio, repellat facilis quis fugit eum tempora quasi modi expedita eaque aliquam blanditiis, commodi alias consequatur! Corporis, numquam.</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quasi! Minus autem praesentium placeat et. Laudantium voluptatem cumque eveniet, aspernatur ab maxime, quibusdam, rem laborum quae perferendis quo expedita magnam.</p>
+                        <a href="#" class="button button-solid">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-my-skill">
+            <div class="container">
+                <div class="row section-heading">
+                    <div class="column">
+                        <h2 class="heading heading--medium heading--underline heading--underline-right">
+                            My Skills
+                        </h2>
+                    </div>
+                </div>
+                <div class="row section-content">
+                    <div class="column column--half">
+                        <h3 class="heading heading--small">My creative <span class="text-highlight">Skills</span> and <span class="text-highlight">experiences.</span></h3>
+                        <p class="section-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid porro natus facere atque aliquam, facilis illum esse rerum rem earum ipsa dicta reiciendis sit, fugit ullam deleniti dolore beatae aspernatur?
+                        </p>
+                    </div>
+                    <div class="column column--half">
+                        <ul class="progress">
+                            <li class="progress-item">
+                               <span class="progress-label">
                                 <span class="progress-title">
-                                    HTML 2
+                                    HTML 1
                                 </span>
                                 <span class="progress-percent">
-                                    40%
+                                    90%
                                 </span>
-                            </span> 
-                            <div class="progress-bar progress-bar-40"></div>
-                         </li>
-                         <li class="progress-item">
-                            <span class="progress-label">
-                             <span class="progress-title">
-                                 HTML 3
-                             </span>
-                             <span class="progress-percent">
-                                 80%
-                             </span>
-                            </span> 
-                            <div class="progress-bar progress-bar-80"></div>
-                         </li>
-                         <li class="progress-item">
-                            <span class="progress-label">
-                             <span class="progress-title">
-                                 HTML 4
-                             </span>
-                             <span class="progress-percent">
-                                 50%
-                             </span>
-                            </span> 
-                            <div class="progress-bar progress-bar-50"></div>
-                         </li>
-                         <li class="progress-item">
-                            <span class="progress-label">
-                             <span class="progress-title">
-                                 HTML 5
-                             </span>
-                             <span class="progress-percent">
-                                 50%
-                             </span>
-                            </span> 
-                            <div class="progress-bar progress-bar-50"></div>
-                         </li>
-                         <li class="progress-item">
-                            <span class="progress-label">
-                             <span class="progress-title">
-                                 HTML 6
-                             </span>
-                             <span class="progress-percent">
-                                 50%
-                             </span>
-                            </span> 
-                            <div class="progress-bar progress-bar-50"></div>
-                         </li>
-                         
-                    </ul>
+                               </span> 
+                               <div class="progress-bar progress-bar-90"></div>
+                            </li>
+                            <li class="progress-item">
+                                <span class="progress-label">
+                                    <span class="progress-title">
+                                        HTML 2
+                                    </span>
+                                    <span class="progress-percent">
+                                        40%
+                                    </span>
+                                </span> 
+                                <div class="progress-bar progress-bar-40"></div>
+                             </li>
+                             <li class="progress-item">
+                                <span class="progress-label">
+                                 <span class="progress-title">
+                                     HTML 3
+                                 </span>
+                                 <span class="progress-percent">
+                                     80%
+                                 </span>
+                                </span> 
+                                <div class="progress-bar progress-bar-80"></div>
+                             </li>
+                             <li class="progress-item">
+                                <span class="progress-label">
+                                 <span class="progress-title">
+                                     HTML 4
+                                 </span>
+                                 <span class="progress-percent">
+                                     50%
+                                 </span>
+                                </span> 
+                                <div class="progress-bar progress-bar-50"></div>
+                             </li>
+                             <li class="progress-item">
+                                <span class="progress-label">
+                                 <span class="progress-title">
+                                     HTML 5
+                                 </span>
+                                 <span class="progress-percent">
+                                     50%
+                                 </span>
+                                </span> 
+                                <div class="progress-bar progress-bar-50"></div>
+                             </li>
+                             <li class="progress-item">
+                                <span class="progress-label">
+                                 <span class="progress-title">
+                                     HTML 6
+                                 </span>
+                                 <span class="progress-percent">
+                                     50%
+                                 </span>
+                                </span> 
+                                <div class="progress-bar progress-bar-50"></div>
+                             </li>
+                             
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="project">
-            <h2 class="section-heading heading--center">
-                My Project
-            </h2>
-            <div class="section-content project-content-wrapper">
-                <div class="product-column">
-                    <div class="project-item">
-                        <img class="project-image project-image--large" src="image/project-1.jpg" alt="">
-                    </div>
-                    <div class="project-item">
-                        <img class="project-image project-image--small" src="image/project-2.jpg" alt="">
+        <section class="section section-my-project">
+            <div class="container container--small">
+                <div class="row section-heading">
+                    <div class="column">
+                        <h2 class="heading heading--medium heading--underline">
+                            My Project
+                        </h2>
                     </div>
                 </div>
-                <div class="product-column">
-                    <div class="project-item">
-                        <img class="project-image project-image--small" src="image/project-3.jpg" alt="">
+                <div class="row">
+                    <div class="column product-column">
+                        <div class="project-item">
+                            <img class="project-image project-image--large" src="image/project-1.jpg" alt="">
+                        </div>
+                        <div class="project-item">
+                            <img class="project-image project-image--small" src="image/project-2.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="project-item">
-                        <img class="project-image project-image--large" src="image/project-4.jpeg" alt="">
+                    <div class="column product-column">
+                        <div class="project-item">
+                            <img class="project-image project-image--small" src="image/project-3.jpg" alt="">
+                        </div>
+                        <div class="project-item">
+                            <img class="project-image project-image--large" src="image/project-4.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="column product-column">
+                        <div class="project-item">
+                            <img class="project-image project-image--large" src="image/project-5.jpeg" alt="">
+                        </div>
+                        <div class="project-item">
+                            <img class="project-image project-image--small" src="image/project-6.jpeg" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="product-column">
-                    <div class="project-item">
-                        <img class="project-image project-image--large" src="image/project-5.jpeg" alt="">
-                    </div>
-                    <div class="project-item">
-                        <img class="project-image project-image--small" src="image/project-6.jpeg" alt="">
-                    </div>
-                </div>
-            
             </div>
         </section>
-        <section class="contact">
+        <section class="section section-contact">
             <div class="section-heading">
-                <h2 class="section-heading heading--center">Contact Us</h2>
+                <h2 class="section-heading">Contact Us</h2>
             </div>
-            <div class="section-content">
+            <div class="section-content section-content-contact">
                 <div class="section-content--left">
-                    <h3 class="block-heading">
+                    <h3 class="block-heading heading--small">
                         Message Me
                     </h3>
                     <div class="block-content">
@@ -210,23 +236,32 @@
                             <div class="form-row">
                                 <textarea name="message" id="field__message" cols="30" rows="10" class="field__text field__message"></textarea>
                             </div>
+                            <div class="form-row">
+                                <button class="button button--outline button--icon" type="submit ">Send Message
+                                    <span class="icon">
+                                        <img src="image/arrow.png" alt="">
+                                    </span>
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
                 <div class="section-content--right">
-                    <h3 class="block-heading">Lorem ipsum dolor sit amet</h3>
+                    <h3 class="block-heading heading--small">Lorem ipsum dolor sit amet</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae provident, libero eius perferendis pariatur laborum exercitationem necessitatibus, minus alias non similique, veniam recusandae dignissimos asperiores nostrum dolore in autem soluta?</p>
                     <ul class="contact-info">
                         <li class="contact-info-item">
-                            <span class="icon"></span>
+                            <span class="icon">
+                                <img src="image/icon-1.png" alt="">
+                            </span>
                             <span>Lorem ipsum dolor sit amet</span>
                         </li>
                         <li class="contact-info-item">
-                            <span class="icon"></span>
+                            <img src="image/icon-2.png" alt="">
                             <span>Lorem ipsum dolor sit amet</span>
                         </li>
                         <li class="contact-info-item">
-                            <span class="icon"></span>
+                            <img src="image/icon-3.png" alt="">
                             <span>Lorem ipsum dolor sit amet</span>
                         </li>
                     </ul>
@@ -234,8 +269,10 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="section-footer">
+        <div class="copy-right">
+            <span>Created By <a href="">LunaCodr</a>  | &copy 2022 All Right Reserved.  </span>
+        </div>
     </footer>
 </body>
 </html>
