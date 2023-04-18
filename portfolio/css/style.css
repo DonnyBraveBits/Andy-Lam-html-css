@@ -228,3 +228,26 @@ img {
     aspect-ratio: 0.8;
 }
 /* End Section my project */
+
+/* Section Contact Us */
+.block-contact-heading{
+    margin-bottom: 30px;
+}
+.form-row {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+.form-field {
+    width: 100%;
+}
+.field__text {
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.form-submit{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
