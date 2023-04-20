@@ -57,16 +57,16 @@ img {
 }
 
 .heading--large {
-    font-size: 96px; 
+    font-size: 40px; 
 }
 .heading--medium {
-    font-size: 48px;
+    font-size: 30px;
 }
 .heading--small {
     font-size: 36px;
 }
 .sub-heading {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .heading--underline{
@@ -256,3 +256,23 @@ img {
     text-align: center;
 }
 
+
+@media(min-width: 768px) {
+    .heading--large {
+        font-size: 96px; 
+    }
+    .heading--medium {
+        font-size: 48px;
+    }
+    .sub-heading{
+        font-size: 24px;
+    }
+}
+
+@media(min-width: 992px) {
+    
+}
+
+@media(min-width: 1200px) {
+
+}

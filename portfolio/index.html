@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 </head>
@@ -14,10 +14,18 @@
     <header id="header" class="section section-header">
         <div class="container">
         <div class="row">
-            <div class="column column--half">
+            <div class="column column-laptop-6">
+                <button type="button" aria-expanded="false" aria-label="Toggle Navigation" aria-controls="menuDrawer" class="button button--toggle-nav">
+                    
+                    <svg class="icon-hamburger" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" aria-expanded="false">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 7L3 7L3 5L21 5L21 7Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 13L3 13L3 11L21 11L21 13Z" aria-expanded="false"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 19L3 19L3 17L16 17L16 19Z"></path>
+                    </svg>
+                    </button>
                 <img class="logo__image" src="image/logo.png" alt="Nguyễn Mạnh Đô">
             </div>
-            <div class="column column--half">
+            <div class="column column-laptop-6">
                 <nav id="main-nav" class="main-nav">
                     <ul class="nav-list">
                         <li class="nav__item">
@@ -42,10 +50,29 @@
         </div>
     </header>
     <main>
+        <section class="section grid">
+            <div class="container">
+                <div class="row">
+                    <div class="column column-laptop-1" style="height: 300px">1</div>
+                    <div class="column column-laptop-1" style="height: 300px">2</div>
+                    <div class="column column-laptop-1" style="height: 300px">3</div>
+                    <div class="column column-laptop-1" style="height: 300px">4</div>
+                    <div class="column column-laptop-1" style="height: 300px">5</div>
+                    <div class="column column-laptop-1" style="height: 300px">6</div>
+                    <div class="column column-laptop-1" style="height: 300px">7</div>
+                    <div class="column column-laptop-1" style="height: 300px">8</div>
+                    <div class="column column-laptop-1" style="height: 300px">9</div>
+                    <div class="column column-laptop-1" style="height: 300px">10</div>
+                    <div class="column column-laptop-1" style="height: 300px">11</div>
+                    <div class="column column-laptop-1" style="height: 300px">12</div>
+                </div>
+            </div>
+            
+        </section>
         <section class="section banner">
             <div class="container">
                 <div class="row">
-                    <div class="column column--half">
+                    <div class="column column-laptop-6">
                         <div class="banner__content">
                             <span class="sub-heading">Hello, I'm</span>
                             <h2 class="heading heading--large font-bold">Nguyễn Mạnh Đô</h2>
@@ -53,7 +80,7 @@
                             <a href="#" class="button button-outline">Contact Me</a>
                         </div>
                     </div>
-                    <div class="column column--half">
+                    <div class="column column-laptop-6">
                         <div class="banner__image">
                             <img class="banner--image" src="image/banner-image.jpeg" alt="">
                         </div>
@@ -70,12 +97,12 @@
                 </div>
                 <div class="section__content">
                 <div class="row">
-                    <div class="column column--half">
+                    <div class="column column-laptop-6">
                         <div class="about-me-image-wrap">
                             <img class="about-me-image" src="image/banner-image.jpeg" alt="">
                         </div>
                     </div>
-                    <div class="column column--half section-content">
+                    <div class="column column-laptop-6 section-content">
                         <h3 class="heading--small">Who I AM?</h3>
                         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro molestiae in optio, repellat facilis quis fugit eum tempora quasi modi expedita eaque aliquam blanditiis, commodi alias consequatur! Corporis, numquam.</p>
                         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quasi! Minus autem praesentium placeat et. Laudantium voluptatem cumque eveniet, aspernatur ab maxime, quibusdam, rem laborum quae perferendis quo expedita magnam.</p>
@@ -94,13 +121,13 @@
                     </div>
                 </div>
                 <div class="row section-content">
-                    <div class="column column--half">
+                    <div class="column column-laptop-6">
                         <h3 class="heading heading--small">My creative <span class="text-highlight">Skills</span> and <span class="text-highlight">experiences.</span></h3>
                         <p class="section-description">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid porro natus facere atque aliquam, facilis illum esse rerum rem earum ipsa dicta reiciendis sit, fugit ullam deleniti dolore beatae aspernatur?
                         </p>
                     </div>
-                    <div class="column column--half">
+                    <div class="column column-laptop-6">
                         <ul class="progress">
                             <li class="progress-item">
                                <span class="progress-label">
@@ -219,7 +246,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="column column--half">
+                    <div class="column column-laptop-6">
                         <h3 class="block-contact-heading heading heading--small">
                             Message Me
                         </h3>
@@ -249,7 +276,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="column column--half">
+                    <div class="column column-laptop-6">
                         <h3 class="block-contact-heading heading heading--small">Lorem ipsum dolor sit amet</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae provident, libero eius perferendis pariatur laborum exercitationem necessitatibus, minus alias non similique, veniam recusandae dignissimos asperiores nostrum dolore in autem soluta?</p>
                         <ul class="contact-info">
